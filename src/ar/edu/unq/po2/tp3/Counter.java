@@ -98,7 +98,6 @@ public class Counter {
 		return (int)digitList.stream().filter(n -> n % 2 == 0).count();
 	}
 	
-	//PRUEBAAAA
 	
 	
 }
