@@ -19,15 +19,10 @@ public class Main {
 		
 		
 		count.addNumber(111);
-		count.addNumber(333);
+		count.addNumber(3332);
 		count.addNumber(555);
-//		count.addNumber(4823);
-//		count.addNumber(957);
-//		count.addNumber(16);
-//		count.addNumber(1275);
-//		count.addNumber(1478);
-//		count.addNumber(17828);
-//		count.addNumber(449144);
+		count.addNumber(204452);
+
 		
 		System.out.println(count.cantImpares());
 		System.out.println(count.cantPares());
@@ -36,6 +31,12 @@ public class Main {
 		System.out.println(count.maxEvenDigitsNumCount());
 		
 		//System.out.println(count.numToList(4545164));
+	
+	
+	//////////// PUNTO 3//////////
+	
+		System.out.println(count.numMaxMultiplo(67, 88));
+		
 	}
 
 }

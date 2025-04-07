@@ -1,8 +1,6 @@
 package ar.edu.unq.po2.tp3;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 
@@ -98,6 +96,28 @@ public class Counter {
 		return (int)digitList.stream().filter(n -> n % 2 == 0).count();
 	}
 	
+	////////////////////////////PUNTO 3////////////////////////////////
+	
+	public int numMaxMultiplo(int x, int y) {
+		int num = 999;
+		while(!esMultiplo(num, x) || !esMultiplo(num, y)) {
+			num--;
+		}
+		
+		return (num > 0) ? num : -1; //condicion ? <si es verdadera> : <si es falsa>
+		//return validarNum(num);
+	}
+
+	private int validarNum(int num) {
+		if(num > 0) {
+			return num;
+		}
+		return -1;
+	}
+
+	private boolean esMultiplo(int num, int divisor) {
+		return num % divisor == 0;
+	}
 	
 	
 }
