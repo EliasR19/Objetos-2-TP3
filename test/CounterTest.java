@@ -2,7 +2,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.*;
 
-
 import ar.edu.unq.po2.tp3.*;
 
 
@@ -36,6 +35,7 @@ public class CounterTest {
 			counter.addNumber(4);
 		}
 		///PUNTO 1///
+		/////aa
 		@Test
 		public void testCantPares() {
 			assertEquals(1, counter.cantPares());

@@ -51,8 +51,9 @@ public class Counter {
 //				maxEvenDigitNum = n;
 //			}
 //		}
-		//FORMA C si no hay devuelve el primer numero de la lista. Si tiene  la misma cantidad devuelve el primero que encontro.
+	//FORMA C si no hay devuelve el primer numero de la lista. Si tiene  la misma cantidad devuelve el primero que encontro.
 		return nums.stream().max((n1,n2) -> cantPares(numToList(n1)) - (cantPares(numToList(n2)))).get();
+
 		
 		//FORMA A-B
 		//return maxEvenDigitNum;
@@ -70,6 +71,7 @@ public class Counter {
 			base = base / 10;
 		}
 		
+
 
 		return count;
 	}
@@ -96,6 +98,8 @@ public class Counter {
 		return (int)digitList.stream().filter(n -> n % 2 == 0).count();
 	}
 	
+	
+
 	////////////////////////////PUNTO 3////////////////////////////////
 	
 	public int numMaxMultiplo(int x, int y) {

@@ -17,8 +17,18 @@ public class Multioperador {
 	public int sumNumList() {
 		return nums.stream().reduce(0, (a,b) -> a + b);
 	}
+	
+//	public int subNumList() { NO funciona porque la resta no es asociatiba.
+//		return nums.stream().reduce(0, (a,b) -> a - b);
+//	}
 	public int subNumList() {
-		return nums.stream().reduce(0, (a,b) -> a - b);
+		int total = nums.getFirst();
+		nums.removeFirst();
+		for(int n : nums) {
+			total = total - n ;
+		}
+
+		return total;
 	}
 	public int mulNumList() {
 		return nums.stream().reduce(1, (a,b) -> a * b);
