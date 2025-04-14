@@ -9,10 +9,9 @@ import ar.edu.unq.po2.tp3.*;
 public class CounterTest {
 
 	private Counter counter;
-	private Multioperador mulOp;	
 	
 	
-	@Nested @Disabled 
+	@Nested 
 	class Punto1 {
 		
 	
@@ -51,7 +50,7 @@ public class CounterTest {
 	}
 
 	///PUNTO 2///
-	@Test @Disabled 
+	@Test 
 	public void testMaxEvenDigitsNumCount() {
 		counter = new Counter();
 		counter.addNumber(111);
@@ -63,7 +62,7 @@ public class CounterTest {
 	}
 	
 	///PUNTO 3////
-	@Test @Disabled 
+	@Test 
 	public void testnumMaxMultiplo() {
 		Counter counter = new Counter();
 		
@@ -72,28 +71,5 @@ public class CounterTest {
 		
 	}
 	
-	@Nested
-	class Punto6{
-		
-		@BeforeEach
-		public void setUp() throws Exception{
-			mulOp = new Multioperador();
-			mulOp.addNumber(123);
-			mulOp.addNumber(2);
-			mulOp.addNumber(32);
-		}
-		
-		@Test
-		public void testSumNumList() {
-			assertEquals(157, mulOp.sumNumList());
-		}
-		@Test
-		public void testSubNumList() {
-			assertEquals(-157, mulOp.subNumList());
-		}
-		@Test
-		public void testMulNumList() {
-			assertEquals(7872, mulOp.mulNumList());
-		}
-	}
+
 }

@@ -23,8 +23,9 @@ public class Multioperador {
 //	}
 	public int subNumList() {
 		int total = nums.getFirst();
-		nums.removeFirst();
-		for(int n : nums) {
+		List<Integer> numsCopy = new ArrayList<Integer>(nums); // deep Copy (crea otra instancia de la lista.
+		numsCopy.removeFirst();
+		for(int n : numsCopy) {
 			total = total - n ;
 		}
 

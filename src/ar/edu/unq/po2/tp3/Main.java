@@ -43,10 +43,10 @@ public class Main {
 		System.out.println("\nPUNTO 6");
 		Multioperador multiOp =  new Multioperador();
 		
-		multiOp.addNumber(10);
-		multiOp.addNumber(5);
+		multiOp.addNumber(123);
 		multiOp.addNumber(2);
-		multiOp.addNumber(4);
+		multiOp.addNumber(32);
+
 
 		System.out.println("Sum: " + multiOp.sumNumList());
 		System.out.println("Sub: " + multiOp.subNumList());
