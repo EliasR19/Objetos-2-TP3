@@ -34,16 +34,18 @@ public class CounterTest {
 			counter.addNumber(4);
 		}
 		///PUNTO 1///
-		/////aa
+
 		@Test
 		public void testCantPares() {
 			assertEquals(1, counter.cantPares());
 		}
+		@Test
 		public void testCantImpares() {
 			assertEquals(9, counter.cantImpares());
 		}
+		@Test
 		public void testCantMultiplos() {
-			assertEquals(1, counter.cantMultiplos(3));
+			assertEquals(2, counter.cantMultiplos(3));
 		}
 		
 		
