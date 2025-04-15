@@ -6,21 +6,39 @@ public class Rectangle {
 	private Point puntaC;
 	private Point puntaD;
 	
-	public Rectangle() {
-		puntaA = new Point();
-		puntaB = new Point();
-		puntaC = new Point();
-		puntaD = new Point();
+	public Rectangle(Point puntaA, Point puntaD) {
+		//Suponer que el usuario sabe que tiene que poner las puntas opuestas. A y D
+		this.puntaA = puntaA;
+		this.puntaD = puntaD;
+		this.puntaB = new Point(puntaD.getX(), puntaA.getY());
+		this.puntaC = new Point(puntaA.getX(), puntaD.getY());
+		
 	}
 	
-	/* colocar una punta Ejemplo:
-	 * 
-	 * rectangulo.getPuntaA().setX(x);
-	 * rectangulo.getPuntaA().setY(y);
-	 * O
-	 * rectangulo.getPuntaA().movePoint(x,y)
-	 */
+	//Es vertical u Horizontal
+	public String posicion() {
+		return (this.alto() > this.ancho()) ? "Vertical" : "Horizontal";
+	}
 	
+	//Perimetro
+	public int perimetro() {
+		return 2*(this.alto() + this.ancho());
+	}
+	
+	//Area Area = alto * ancho
+	public int area() {
+		return this.alto() * this.ancho();
+	}
+	//alto
+	public int alto() {
+		return puntaA.getY() - puntaC.getY();
+	}
+	//ancho
+	public int ancho() {
+		return puntaB.getX() - puntaA.getX();
+	}
+	
+
 	//Getters
 	public Point getPuntaA() {
 		return puntaA;
@@ -35,21 +53,8 @@ public class Rectangle {
 		return puntaD;
 	}
 	
-	//Setters
-	public void setPuntaA(Point puntaA) {
-		this.puntaA = puntaA;
-	}
-	public void setPuntaB(Point puntaB) {
-		this.puntaB = puntaB;
-	}
-	public void setPuntaC(Point puntaC) {
-		this.puntaC = puntaC;
-	}
-	public void setPuntaD(Point puntaD) {
-		this.puntaD = puntaD;
-	}
+
 	
-	//Area
 	
 
 }
