@@ -1,0 +1,22 @@
+Teoría TP3
+4- 
+s.length();				3
+t.length(); 				no esta inicializado.
+1 + a;					1abc
+a.toUpperCase();			ABC
+"Libertad".indexOf("r");		4
+"Universidad".lastIndexOf('i');		7
+"Quilmes".substring(2,4);		ilm
+(a.length() + a).startsWith("a");	false
+s == a;					True (mala implementación)
+a.substring(1,3).equals("bc")		false
+
+5-
+a) Los tipos primitivos definen el valor que contiene una variable y las operaciones que se pueden hacer con el. No comparten su estado con otros valores primitivos.
+
+b) int es un tipo primitivo que almacena el información en forma binaria. Integer es una clase que alamacena referencias de objetos Integer.
+Integer es una clase con una sola variable de int. Cada int es una inicialización de la clase Integer.
+
+c) Dan error porque a int no se inicializo, e Integer el valor que le mandes al constructor.
+
+d) 
