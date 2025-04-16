@@ -1,4 +1,5 @@
 package ar.edu.unq.po2.tp3;
+
 public class Cube extends Forma4Lados {
 
 	public Cube(Point puntaA, Point puntaD) {
